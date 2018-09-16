@@ -37,12 +37,12 @@ def login(sellerUrl, username, password):
     else:
         print ("Your 3 tries all failed, please contact admin!")
 
-username = ""
-password = ""
-loginRe = login(sellerUrl, username, password)
+#username = ""
+#password = ""
+#loginRe = login(sellerUrl, username, password)
 
-return login_re_js = loginRe.json()
-return token_type = login_re_js['token_type']
-return access_token = login_re_js['access_token']
-return refresh_token = login_re_js['refresh_token']
-return head = {'Authorization': token_type + " " + access_token}
+#return login_re_js = loginRe.json()
+#return token_type = login_re_js['token_type']
+#return access_token = login_re_js['access_token']
+#return refresh_token = login_re_js['refresh_token']
+#return head = {'Authorization': token_type + " " + access_token}

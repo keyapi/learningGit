@@ -36,3 +36,7 @@ def loginTries():
             print ("Your " + str(count) + ". login failed, please try again! (max. 3 tries)")
     else:
         print ("Your 3 tries all failed, please contact admin!")
+
+	
+if __name__== "__main__":
+    loginTries()

@@ -28,7 +28,7 @@ def login(sellerUrl, username, password):
 
 username = ""
 password = ""
-loginRe = login(username, password)
+loginRe = login(sellerUrl, username, password)
 
 login_re_js = loginRe.json()
 token_type = login_re_js['token_type']

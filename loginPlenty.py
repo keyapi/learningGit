@@ -3,7 +3,7 @@ print ("Login")
 import requests
 import getpass #no showing the input username and password
 
-
+sellerUrl = sellerUrl
 def login(sellerUrl, username, password):
     sellerUrl = sellerUrl
     route = "/rest/login"
@@ -30,8 +30,8 @@ username = ""
 password = ""
 loginRe = login(sellerUrl, username, password)
 
-login_re_js = loginRe.json()
-token_type = login_re_js['token_type']
-access_token = login_re_js['access_token']
-refresh_token = login_re_js['refresh_token']
-head = {'Authorization': token_type + " " + access_token}
+return login_re_js = loginRe.json()
+return token_type = login_re_js['token_type']
+return access_token = login_re_js['access_token']
+return refresh_token = login_re_js['refresh_token']
+return head = {'Authorization': token_type + " " + access_token}

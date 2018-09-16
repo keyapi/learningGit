@@ -20,7 +20,7 @@ def login(sellerUrl, username, password):
         
         re = requests.post(loginUrl)
         if re.status_code == 200:
-            print ("login successful")
+		    print ("login successful")
 			login_re_js = re.json()
 			token_type = login_re_js['token_type']
 			access_token = login_re_js['access_token']

@@ -3,9 +3,11 @@ print ("Login")
 import requests
 import getpass #no showing the input username and password
 
-sellerUrl = sellerUrl
+sellerUrl = ""
+username = ""
+password = ""
 def login(sellerUrl, username, password):
-    #sellerUrl = sellerUrl
+    sellerUrl = sellerUrl
     route = "/rest/login"
     count = 0
     while count < 3:
@@ -25,7 +27,7 @@ def login(sellerUrl, username, password):
 			refresh_token = login_re_js['refresh_token']
 			head = {'Authorization': token_type + " " + access_token}
 			
-            return (token_type, access_token, refresh_token, head)
+            return token_type, access_token, refresh_token, head
 			#return login_re_js
 			#return token_type
 			#return access_token
@@ -37,8 +39,6 @@ def login(sellerUrl, username, password):
     else:
         print ("Your 3 tries all failed, please contact admin!")
 
-#username = ""
-#password = ""
 #loginRe = login(sellerUrl, username, password)
 
 #return login_re_js = loginRe.json()

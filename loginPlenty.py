@@ -5,7 +5,7 @@ import getpass #no showing the input username and password
 
 sellerUrl = sellerUrl
 def login(sellerUrl, username, password):
-    sellerUrl = sellerUrl
+    #sellerUrl = sellerUrl
     route = "/rest/login"
     count = 0
     while count < 3:
@@ -18,7 +18,7 @@ def login(sellerUrl, username, password):
         
         re = requests.post(loginUrl)
         if re.status_code == 200:
-            print ("Your login is successful!")
+            print ("login successful")
 			login_re_js = re.json()
 			token_type = login_re_js['token_type']
 			access_token = login_re_js['access_token']

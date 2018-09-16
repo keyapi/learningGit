@@ -4,7 +4,8 @@ import requests
 import getpass #no showing the input username and password
 
 
-def login(username, password):
+def login(sellerUrl, username, password):
+    sellerUrl = sellerUrl
     route = "/rest/login"
     count = 0
     while count < 3:

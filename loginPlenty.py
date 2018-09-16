@@ -1,4 +1,3 @@
-print ("Login")
 import json
 import requests
 import getpass #no showing the input username and password
@@ -6,6 +5,9 @@ import getpass #no showing the input username and password
 sellerUrl = ""
 username = ""
 password = ""
+
+print ("Login")
+
 def login(sellerUrl, username, password):
     sellerUrl = sellerUrl
     route = "/rest/login"

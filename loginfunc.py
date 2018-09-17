@@ -22,7 +22,7 @@ def loginTries(sellerUrl):
     count = 0
     while count < 3:
         count += 1
-        re = login(sellerUrl, username, password)
+        re = login()
         if re.status_code == 200:
             print ("login successful")
             login_re_js = re.json()

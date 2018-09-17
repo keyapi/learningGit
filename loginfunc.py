@@ -41,4 +41,4 @@ def loginTries(sellerUrl, username, password):
 
 	
 if __name__== "__main__":
-    loginTries()
+    loginTries(sellerUrl, username, password)

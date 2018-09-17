@@ -20,8 +20,8 @@ def login(sellerUrl, username, password):
 
 def loginTries(sellerUrl):
     sellerUrl = sellerUrl
-	username = ""
-	password = ""
+    username = ""
+    password = ""
     count = 0
     while count < 3:
         count += 1

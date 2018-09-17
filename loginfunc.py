@@ -10,16 +10,16 @@ def userInput():
     return username, password
 
 def login(sellerUrl, username, password):
+    sellerUrl = sellerUrl
+    username, password = userInput()
     route = "/rest/login"
     paras = f"?username={username}&password={password}"
     loginUrl = sellerUrl + route + paras  
     re = requests.post(loginUrl)
     return re
 
-def loginTries(sellerUrl, username, password):
+def loginTries(sellerUrl):
     sellerUrl = sellerUrl
-    username = username
-    password = password
     count = 0
     while count < 3:
         count += 1
@@ -41,4 +41,4 @@ def loginTries(sellerUrl, username, password):
 
 	
 if __name__== "__main__":
-    loginTries(sellerUrl, username, password)
+    loginTries(sellerUrl)

@@ -17,7 +17,8 @@ def login(sellerUrl, username, password):
     re = requests.post(loginUrl)
     return re
 
-def loginTries():
+def loginTries(sellerUrl):
+    sellerUrl = sellerUrl
     count = 0
     while count < 3:
         count += 1

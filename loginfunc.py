@@ -3,9 +3,8 @@ import requests
 import json
 
 def userInput():
-    print("Please enter your PM username and press Enter button")
+    print("Please enter your PM login data and press Enter button")
     username = input("username: ")
-    #print("Please enter your password and press Enter button")
     password = getpass.getpass("password: ")
     return username, password
 

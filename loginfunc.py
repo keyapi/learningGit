@@ -11,18 +11,18 @@ def userInput():
 
 def login(sellerUrl, username, password):
     route = "/rest/login"
-    username, password = userInput()
     paras = f"?username={username}&password={password}"
     loginUrl = sellerUrl + route + paras  
     re = requests.post(loginUrl)
     return re
 
-def loginTries(sellerUrl):
+def loginTries(sellerUrl, username, password):
     sellerUrl = sellerUrl
+	username, password = userInput()
     count = 0
     while count < 3:
         count += 1
-        re = login()
+        re = login(sellerUrl, username, password)
         if re.status_code == 200:
             print ("login successful")
             login_re_js = re.json()

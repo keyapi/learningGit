@@ -18,7 +18,7 @@ def login(sellerUrl, username, password):
 
 def loginTries(sellerUrl, username, password):
     sellerUrl = sellerUrl
-	username, password = userInput()
+    username, password = userInput()
     count = 0
     while count < 3:
         count += 1
